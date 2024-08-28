@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="title">Tv Show Search</h1>
+
+<main>
+  <div id="inputs-container">
+    <div id="user-inputs">
+      <input type="text" id="input" class="input-style" placeholder="Enter Name Here"/> 
+    </div>
+  
+    <div id="btns-container">
+      <button id="generate-btn" class="btn-styling">Find Show</button>
+      <button id="show-more-results" class="btn-styling hidden">Show More Results</button>
+     <select name="filter-dropdown" id="filter-dropdown" class="hidden">
+      <option value="sort-by" selected disabled>Sort By</option>
+      <option value="highest-rating">Highest Rating</option>
+      <option value="lowest-rating">Lowest Rating</option>
+     </select>
+    </div>
+  </div>
+  
+
+    <div id="container"></div>
+  </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+

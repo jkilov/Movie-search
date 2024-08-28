@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #FFF6ED;
+    --green-primary: #2A877D;
+    ---green-secondary: #0C4D46;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+    font-family: poppins;
+    text-align: center;
+    color: var(--green-primary)
+  }
+
+
+#media-type{
+  width: 120px;
+}
+
+
+.hidden {
+  display: none
+}
+
+
+.media-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-size {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+#container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  grid-gap: 10px; /* Space between items */
+  justify-items: center;
+  align-items: center;
+}
+
+
+.media-container {
+  display: flex;
+  flex-direction: row; /* Align image and text side by side */
+  align-items: center; /* Vertically center the image and text */
+  justify-content: flex-start; /* Keep everything left-aligned */
+  gap: 20px; /* Space between image and text */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 20px;
+}
+
+.img-container {
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack the text elements vertically */
+  justify-content: center; /* Center text vertically */
+  text-align: left; /* Left-align the text */
+}
+
+.media-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  width: 70vw;
+}
+
+.btn-styling{
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: 1px solid var(--green-primary);
+  background-color: var(---green-secondary);
+  color: var(--main-bg-color);
+  margin-right: 10px;
+}
+
+  .title {
+    margin: 20px 0;
+  }
+
+  #filter-dropdown{
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+  #inputs-container {
+    display: flex;
+    flex-direction: column; /* Stack the input section and buttons container vertically */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #user-inputs {
+    display: flex; /* Keep select and input side by side */
+    gap: 10px; /* Add space between the select and input */
+  }
+
+  #inputs-container > * {
+    margin-right: 10px;
+  }
+
+  #btns-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Add space between inputs and buttons */
+  }
+
+  #input {
+    display: block;
+  }
+
+
+.input-style {
+  padding: 5px 15px;
+  border: 1px solid var(---green-secondary);
+  border-radius: 10px;
+  text-align: center;
+}
+
+  .movie-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #author-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .user-card {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    background-color: var(--light-grey);
+    margin: 20px;
+  }
+  
+  .user-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .purple-divider {
+    background-color: var(--dark-purple);
+    width: 100%;
+    height: 15px;
+  }
+  
+  .author-name {
+    margin: 10px;
+  }
+  
+  .bio {
+    margin: 20px;
+  }
+  
+  .error-msg {
+    color: var(--light-grey);
+  }
+  
+  .btn {
+    cursor: pointer;
+    width: 200px;
+    margin: 10px;
+    color: var(--main-bg-color);
+    font-size: 14px;
+    background-color: var(--golden-yellow);
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border-color: var(--golden-yellow);
+    border-width: 3px;
+  }
